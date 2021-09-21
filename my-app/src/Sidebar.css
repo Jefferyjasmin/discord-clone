@@ -1,0 +1,131 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  flex: 0.2;
+  height: 100vh;
+  background-color: #2f3135;
+  width: 26%;
+}
+
+.sidebar_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 20px;
+  border-bottom: 3px solid #26282c;
+}
+
+.sidebar_channels {
+  flex: 1;
+}
+
+.sidebar_addChannel {
+  cursor: pointer;
+}
+
+.sidebar_addChannel:hover {
+  color: white;
+}
+.sidebar_channelHeader {
+  color: gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #2f3135;
+}
+
+.sidebar_header {
+  display: flex;
+  align-items: center;
+}
+
+.sideba_Voice,
+.sidebar_profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: gray;
+  background-color: #2f3135;
+  padding: 10px;
+  border-top: 1px solid gray;
+}
+
+.sidebar_voiceInfo,
+.sidebar_profileInfo {
+  flex: 1;
+  padding: 10px;
+}
+.sidebar_voiceIcons,
+.sidebar_voiceIcon {
+  color: green;
+}
+
+.sidebar_voiceInfo > h3 {
+  color: green;
+}
+
+.sidebar_voiceInfo > p {
+  font-size: smaller;
+}
+
+.sidebar_voiceIcons > .MuiSvgIcon-root {
+  padding: 10px;
+}
+
+.sidebar_profileInfo > h3 {
+  color: white;
+}
+
+.sidebar_profileIcons > .MuiSvgIcon-root {
+  padding: 10px;
+}
+
+@media (max-width: 896px) {
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    flex: 0.2 1;
+    height: 100vh;
+    background-color: #2f3135;
+    width: 37%;
+  }
+  .sidebar_top {
+    /* display: flex; */
+    justify-content: center;
+    /* align-items: center; */
+    color: white;
+    /* padding: 20px; */
+    border-bottom: 3px solid #26282c;
+  }
+  .sideba_Voice,
+  .sidebar_profile {
+    display: grid;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align-items: center; */
+    color: gray;
+    background-color: #2f3135;
+    /* padding: 10px; */
+    border-top: 1px solid gray;
+    width: 50%;
+  }
+
+  .sidebar_channels,
+  .sideba_Voice {
+    border-bottom: 1px solid lightgray;
+  }
+  .sidebar_channelHeader {
+    color: gray;
+    display: flex;
+    /* justify-content: unset; */
+    align-items: center;
+    /* padding: 20px; */
+    background-color: #2f3135;
+  }
+  .sidebar_profileIcons > .MuiSvgIcon-root {
+    display: none;
+    padding: 10px;
+  }
+}
