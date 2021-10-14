@@ -41,7 +41,7 @@ const Chat = () => {
   };
   return (
     <div className="chat">
-      <h2 className="chat_title">the chat box</h2>
+      <h2 className="chat_title">THE CHAT BOX</h2>
       <ChatHeader channelName={channelName} />
       <div className="chat_messages">
         {messages.map(({ timestamp, user, message }) => (
